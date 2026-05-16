@@ -1,63 +1,86 @@
 <!DOCTYPE html>
 <html lang="en-US">
-    <head>
-        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>PORTFOLIO - PROJECTS</title>
-    </head>
-<body style="font-family:Arial, Helvetica, sans-serif;margin:0;">
-    <header style="border: 2px solid rgb(8, 58, 21);display: flex;align-items: center; padding: 20px; background: linear-gradient(to right, #b8e2c2, #025109)">
-    <img src="img/idpicnew2026.JPG" alt="picture" style="width: 80px;height: 80px;">
-    <p style="padding:20px;color:rgb(251, 251, 251)">Jazzpher Garcia</p>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Jazzpher Garcia</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
-    <nav style="margin-left:auto">
-        <a href="index.html" style="margin-left: 20px; text-decoration: none; color: rgb(251, 251, 251);">Home</a>
-        <a href="projects.html" style="margin-left: 20px; text-decoration: none; color: rgb(251, 251, 251);">Projects</a>
-        <a href="articles.html" style="margin-left: 20px; text-decoration: none; color: rgb(251, 251, 251);">Articles</a>
-        <a href="contact.html" style="margin-left: 20px; text-decoration: none; color: rgb(251, 251, 251); ">Contact</a>
-    </nav>
+<header>
+    <div class="container">
+        <div class="logo">
+            <img src="img/idpicnew2026.JPG" alt="Jazzpher Garcia">
+            <span>Jazzpher Garcia</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
 
-<div style="height:90%;border: 2px solid black;text-align:center; padding: 50px; background-color:rgb(72, 157, 85); border-color:black;color:white">
-    <h2>PROJECTS</h2>
-    <p>Check out my projects throughout my first year!</p>
-<br>
-<div style="display:flexbox;align-items:left;">
+<main>
+    <section class="hero" style="min-height: 40vh;">
+        <div class="container">
+            <h1>PROJECTS</h1>
+            <p>A collection of software, games, and systems developed during my academic journey.</p>
+        </div>
+    </section>
 
-    <div style="background-color:white;width:100%;padding:5px;text-align:left;color:black;margin:8px">
-        <a href="https://github.com/daschundchilde/SKYBOUND" style="text-decoration: none;color:rgb(72, 157, 85);font-size:50px" target="_blank"><strong>Skybound</strong></a>
-        <p style="font-size:20px">Skybound is a platformer game created on C with my peers Cyril and Marcus. It is a game
-            where your only option is to go up as the lava rises and catch up to you
-        </p>
+    <section class="section container">
+        <div class="grid" style="grid-template-columns: 1fr;">
+            
+            <article class="card" style="display: flex; flex-direction: column; gap: 16px;">
+                <div style="display: flex; justify-content: space-between; align-items: baseline;">
+                    <h2 class="mono" style="color: var(--accent);">SKYBOUND</h2>
+                    <span class="mono" style="font-size: 0.8rem; color: var(--text-secondary);">C | RAYLIB</span>
+                </div>
+                <p>Skybound is a vertical platformer created with my peers Cyril and Marcus. The core mechanic involves navigating upward as lava rises from below, demanding quick reflexes and precise movement.</p>
+                <a href="https://github.com/daschundchilde/SKYBOUND" target="_blank">View Source on GitHub &rarr;</a>
+            </article>
+
+            <article class="card" style="display: flex; flex-direction: column; gap: 16px;">
+                <div style="display: flex; justify-content: space-between; align-items: baseline;">
+                    <h2 class="mono" style="color: var(--accent);">MATH ROULETTE</h2>
+                    <span class="mono" style="font-size: 0.8rem; color: var(--text-secondary);">C | PROCEDURAL</span>
+                </div>
+                <p>A high-speed mental math quiz game. It generates random arithmetic challenges designed for beginners to improve their calculation speed without the aid of a calculator.</p>
+                <a href="https://github.com/daschundchilde/MATH-ROULETTE" target="_blank">View Source on GitHub &rarr;</a>
+            </article>
+
+            <article class="card" style="display: flex; flex-direction: column; gap: 16px;">
+                <div style="display: flex; justify-content: space-between; align-items: baseline;">
+                    <h2 class="mono" style="color: var(--accent);">COFFEE SHOP SYSTEM</h2>
+                    <span class="mono" style="font-size: 0.8rem; color: var(--text-secondary);">C | SYSTEMS</span>
+                </div>
+                <p>A personal project implementing a point-of-sale system for a coffee shop. Features include user authentication (Login/Sign-In), inventory management, and transaction logging.</p>
+                <a href="https://github.com/daschundchilde/COFFEE-SHOP-SYSTEM" target="_blank">View Source on GitHub &rarr;</a>
+            </article>
+
+            <article class="card" style="display: flex; flex-direction: column; gap: 16px;">
+                <div style="display: flex; justify-content: space-between; align-items: baseline;">
+                    <h2 class="mono" style="color: var(--accent);">SCHOOL RECORD SYSTEM</h2>
+                    <span class="mono" style="font-size: 0.8rem; color: var(--text-secondary);">C++ | OOP</span>
+                </div>
+                <p>My first foray into Object-Oriented Programming (OOP). This system uses classes and objects to manage student records, including personal details, academic standing, and location data.</p>
+                <a href="https://github.com/daschundchilde/SCHOOL-RECORD-SYSTEM" target="_blank">View Source on GitHub &rarr;</a>
+            </article>
+
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2026 Jazzpher Garcia. Built with passion and Code.</p>
     </div>
-
-    <div style="background-color:white;color:black;width:100%;padding:5px;text-align:left;margin:8px">
-    <a href="https://github.com/daschundchilde/MATH-ROULETTE" target="_blank" style="text-decoration:none;color:rgb(72, 157, 85);font-size:50px"><strong>MATH ROULETTE</strong></a>
-    <p>This is my second game project created with C for our course. It is a Math Quiz Game that generates random numbers
-        meant to be played by beginners. NO CALCULATORS ALLOWED when played.
-    </p>
-    </div>
-
-    <div style="background-color:white;color:black;width:100%;padding:5px;text-align:left;margin:8px">
-    <a href="https://github.com/daschundchilde/COFFEE-SHOP-SYSTEM" style="text-decoration: none;font-size:50px;color:rgb(72, 157, 85);" target="_blank"><strong>Coffee Shop System</strong></a>
-    <p>This is my personal project that allows user to make purchase on foods sold on coffee shops
-        and deposit money with Login/Sign In feature.
-    </p>
-    </div>
-
-    <div style="background-color:white;color:black;width:100%;padding:5px;text-align:left;margin:8px">
-        <a href="https://github.com/daschundchilde/SCHOOL-RECORD-SYSTEM" style="text-decoration:none;color: rgb(72, 157, 85);font-size:50px;"><strong>School Record System</strong></a>
-        <p>This is my first C++ project that introduced me to classes and objects (OOP). It allows user to put names, age, location of a student and display it.</p>
-    </div>
-
-
-</div>
-
-
-
-</div>
+</footer>
 
 </body>
-<footer style="text-align:center; padding: 20px;background: linear-gradient(to right, #4bd346, #8fb48d);height:600px">
-<h6>All Rights Reserved 2026</h6>
-</footer>
 </html>

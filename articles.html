@@ -1,30 +1,45 @@
+<!DOCTYPE html>
 <html lang="en-US">
-    <head>
-        <title>PORTFOLIO-Articles</title>
-        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body style="font-family:Arial, Helvetica, sans-serif;margin:0;background-color:rgb(138, 227, 138);display:flexbox">
-        <!--header-->
-<div>
-    <header style="border: 2px solid rgb(8, 58, 21);display: flex;align-items: center; padding: 20px; background: linear-gradient(to right, #b8e2c2, #025109)">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles | Jazzpher Garcia</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
-    <img src="img/idpicnew2026.JPG" alt="picture" style="width: 80px;height: 80px;">
-    <p style="padding:20px;color:rgb(251, 251, 251)">Jazzpher Garcia</p>
-
-    <nav style="margin-left:auto">
-        <a href="index.html" style="margin-left: 20px; text-decoration: none; color: rgb(251, 251, 251);">Home</a>
-        <a href="projects.html" style="margin-left: 20px; text-decoration: none; color: rgb(251, 251, 251);">Projects</a>
-        <a href="articles.html" style="margin-left: 20px; text-decoration: none; color: rgb(251, 251, 251);">Articles</a>
-        <a href="contact.html" style="margin-left: 20px; text-decoration: none; color: rgb(251, 251, 251); ">Contact</a>
-    </nav>
-    </header>
-</div>
-
-<main style="flex:1">
-    <div style="background-color:white;font-family:Arial, Helvetica, sans-serif;text-align:center">
-        <h1 style="font-size:50px;color:green">No Articles/Blogs Published Yet</h1>
-        <p style="color:green;font-size:20px">Come back soon for future updates!</p>
+<header>
+    <div class="container">
+        <div class="logo">
+            <img src="img/idpicnew2026.JPG" alt="Jazzpher Garcia">
+            <span>Jazzpher Garcia</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="articles.html" class="active">Articles</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </div>
+</header>
+
+<main>
+    <section class="hero" style="min-height: 60vh;">
+        <div class="container">
+            <h1 class="mono">STATUS_CODE: 204</h1>
+            <h2 style="margin-top: 20px;">No Articles Published Yet</h2>
+            <p style="margin-top: 16px; color: var(--text-secondary);">I am currently crafting insightful articles about software engineering and game development. Check back soon for future updates!</p>
+        </div>
+    </section>
 </main>
-    </body>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2026 Jazzpher Garcia. Built with passion and Code.</p>
+    </div>
+</footer>
+
+</body>
 </html>
